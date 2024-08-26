@@ -1,0 +1,38 @@
+* {
+    list-style: none;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {display: none}
+
+.ggbanner {
+    height: 213px;
+    width: 100vw;
+    background-color: black;
+}
+
+.content {
+    width: 100vw;
+    height: 740px;
+    background-color: aqua;
+}
+
+.credits {
+    background-color: orange;
+    width: 100vw;
+    height: auto;
+}
+
+.gigi {
+    background-color: orange;
+    width: 100vw;
+    height: 200px;
+}
+
+.credits {
+    width: 100vw;
+    height: 300px;
+}
