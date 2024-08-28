@@ -1,5 +1,5 @@
 @media screen and (max-width: 856px) {
-    .gigi-links {flex-direction: column;}
+    .gigi-links {flex-direction: column}
     
     .gigi-links p {
         margin-left: 30px;
@@ -8,7 +8,7 @@
         margin: 4px;
     }
     
-    .gigi2 img {height: 200px;}
+    .gigi2 img {height: 200px}
 }
 
 @media screen and (max-width: 700px) {
@@ -18,6 +18,7 @@
         justify-content: center;
     }
 
-    .lcb-child p {text-align: center;}
-    .lcb-child h3 {text-align: center;}
+    .lcb-child p {text-align: center}
+    .lcb-child h3 {text-align: center}
+    .lcb-child h3 {margin: 10px}
 }

@@ -88,5 +88,8 @@ li {margin: 3px;}
     padding: 3px;
 }
 
-.lcb-child h3 {margin: 10px;}
-.lcb-child p {text-align: end;}
+.lcb-child h3 {margin: 10px 0px 10px 0px;}
+.lcb-child p {
+    text-align: end;
+    font-size: 18px;
+}
