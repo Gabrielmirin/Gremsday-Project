@@ -14,9 +14,8 @@ h2 {
     font-size: 55px;
 }
 
-li {
-    margin: 3px;
-}
+h3 {font-size: 23px;}
+li {margin: 3px;}
 
 /* Banner */
 .ggbanner {
@@ -39,6 +38,7 @@ li {
     background-color: orange;
     display: flex;
     flex-direction: column;
+    padding: 5px;
 }
 
 .credits-block {
@@ -76,10 +76,19 @@ li {
 .last-credit-block {
     height: fit-content;
     display: flex;
+    margin: 10px;
 }
 
 .lcb-child {
     height: fit-content;
     width: 50%;
     background-color: orange;
+    padding: 3px;
 }
+
+.lcb-child h3 {
+    text-align: center;
+    margin: 10px;
+}
+
+.lcb-child p {text-align: end;}
