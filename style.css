@@ -15,7 +15,10 @@ h2 {
 }
 
 h3 {font-size: 23px;}
-li {margin: 3px;}
+li {
+    margin: 3px;
+    font-size: 18px;
+}
 .to-left {text-align: start;}
 .to-right {text-align: end;}
 

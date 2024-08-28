@@ -19,6 +19,9 @@
     }
 
     .lcb-child p {text-align: center}
-    .lcb-child h3 {text-align: center}
-    .lcb-child h3 {margin: 10px}
+    .lcb-child h3 {
+        text-align: center;
+        margin: 10px
+    }
+    .lcb-child {text-align: center;}
 }
