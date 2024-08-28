@@ -1,9 +1,14 @@
+/* Fonts
+Credits header: https://fonts.googleapis.com/css2?family=Nerko+One&display=swap
+
+
+*/
+
 * {
     list-style: none;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    text-decoration: none;
 }
 
 ::-webkit-scrollbar {display: none}
@@ -14,11 +19,24 @@ h2 {
     font-size: 55px;
 }
 
-h3 {font-size: 23px;}
+h3 {font-size: 30px;}
+
 li {
     margin: 3px;
     font-size: 18px;
 }
+
+p,
+a,
+li {color: #452819;}
+
+h2,
+h3 {
+    color: white;
+    font-family: "Nerko One", cursive;
+    letter-spacing: 2px;
+}
+
 .to-left {text-align: start;}
 .to-right {text-align: end;}
 
@@ -71,6 +89,7 @@ li {
 .gigi-links p {
     margin-left: 30px;
     margin-right: 30px;
+    letter-spacing: 2px;
 }
 
 .gigi2 img {
@@ -91,8 +110,12 @@ li {
     padding: 3px;
 }
 
-.lcb-child h3 {margin: 10px 0px 10px 0px;}
 .lcb-child p {
     text-align: end;
     font-size: 18px;
+}
+
+.lcb-child h3 {
+    margin: 10px 0px 10px 0px;
+    
 }
