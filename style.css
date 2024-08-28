@@ -10,12 +10,14 @@
 
 /* Text reuse */
 h2 {
-    margin-top: 10px;
+    margin: 10px;
     font-size: 55px;
 }
 
 h3 {font-size: 23px;}
 li {margin: 3px;}
+.to-left {text-align: start;}
+.to-right {text-align: end;}
 
 /* Banner */
 .ggbanner {
@@ -86,9 +88,5 @@ li {margin: 3px;}
     padding: 3px;
 }
 
-.lcb-child h3 {
-    text-align: center;
-    margin: 10px;
-}
-
+.lcb-child h3 {margin: 10px;}
 .lcb-child p {text-align: end;}

@@ -1,0 +1,23 @@
+@media screen and (max-width: 856px) {
+    .gigi-links {flex-direction: column;}
+    
+    .gigi-links p {
+        margin-left: 30px;
+        margin-right: 30px;
+        text-align: center;
+        margin: 4px;
+    }
+    
+    .gigi2 img {height: 200px;}
+}
+
+@media screen and (max-width: 700px) {
+    .last-credit-block {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .lcb-child p {text-align: center;}
+    .lcb-child h3 {text-align: center;}
+}
