@@ -49,32 +49,130 @@ h3 {
 
 /* Content */
 .content {
+    display: flex;
+
     width: 100vw;
     height: 740px;
-    background-color: aqua;
+
     overflow: hidden;
-    display: flex;
+
     background-image: url(material/shoebox.jpg);
     background-size: cover;
     background-position: center;
 }
 
-/* 
-.shoebox-img {
-    max-width: 100%;
-    margin: 0 auto;
+.buttons-section {
+    display: flex;
+    flex-direction: column;
+
+    width: 550px;
+    height: inherit;
+
+    justify-content: center;
+    align-items: center;
 }
 
-*/
+.button-space {
+    display: flex;
+
+    height: 120px;
+    width: 520px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* Buttons */
+.buttons {
+    width: fit-content;
+    height: fit-content;
+
+    margin: 0px auto;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+
+    transition: 0.5s ease-in-out;
+}
+
+button {
+    display: flex;
+    position: relative;
+
+    width: 500px;
+    height: 100px;
+
+    background-color: rgb(255, 165, 0);
+    border: none;
+
+    overflow: hidden;
+
+    color: white;
+
+    transition: 0.2s ease-in-out;
+
+    cursor: pointer;
+}
+
+.button-img {
+    position: absolute;
+    object-fit: cover;
+    z-index: 2;
+    opacity: 0.5;
+    transition: 0.2s ease-in-out;
+    max-width: 100%;
+}
+
+.button-text {
+    font-size: 40px;
+    margin: auto;
+    letter-spacing: 3px;
+    position: relative;
+    z-index: 3;
+    color: white;
+    text-shadow: 0 0 3px goldenrod, 0 0 7px goldenrod;
+}
+
+.button-class {
+    z-index: 1;
+    position: inherit;
+}
+
+.button-class:hover,
+button:hover {
+    transition: 0.2s ease-in-out;
+}
+
+button:hover img {
+    transition: 0.2s ease-in-out;
+    opacity: 0;
+}
+
+.buttons:hover {
+    transition: 0.2s ease-in-out;
+}
+
+#message-button img {top: -90px;}  
+#mtg-button img {top: -90px;}
+#fanart-button img {top: -90px;}
+#certificate-button img {top: -60px;}
+#mfc-button img {top: -110px;}
 
 /* Credits */
-.credits {
+footer {
     height: fit-content;
     width: 100vw;
     background-color: orange;
     display: flex;
     flex-direction: column;
-    padding: 5px;
+    padding: 10px 0px 10px 0px;
+
+    background-image: url(material/credits-bg-op.png);
 }
 
 .credits-block {
@@ -119,7 +217,7 @@ h3 {
 .lcb-child {
     height: fit-content;
     width: 50%;
-    background-color: orange;
+    background-color: transparent;
     padding: 3px;
 }
 
