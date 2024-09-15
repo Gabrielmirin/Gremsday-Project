@@ -82,7 +82,13 @@ h3 {
     align-items: center;
 }
 
+/* Content section */
+.content-section {
+    background-color: aqua;
 
+    width: 75%;
+    height: inherit;
+}
 
 /* Buttons */
 .buttons {

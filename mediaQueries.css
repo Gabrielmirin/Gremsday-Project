@@ -25,3 +25,16 @@
     }
     .lcb-child {text-align: center;}
 }
+
+@media screen and (max-width: 483px) {
+    .lcb-child li {
+        margin-bottom: 20px;
+    }
+
+    .gigi-links p {
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: center;
+        margin: 4px;
+    }
+}
