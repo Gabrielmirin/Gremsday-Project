@@ -52,7 +52,20 @@ h3 {
     width: 100vw;
     height: 740px;
     background-color: aqua;
+    overflow: hidden;
+    display: flex;
+    background-image: url(material/shoebox.jpg);
+    background-size: cover;
+    background-position: center;
 }
+
+/* 
+.shoebox-img {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+*/
 
 /* Credits */
 .credits {
@@ -115,7 +128,6 @@ h3 {
     font-size: 18px;
 }
 
-.lcb-child h3 {
-    margin: 10px 0px 10px 0px;
-    
-}
+.lcb-child li {margin: 10px;}
+
+.lcb-child h3 {margin: 10px 0px 10px 0px;}
