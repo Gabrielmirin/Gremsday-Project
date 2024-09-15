@@ -131,11 +131,20 @@ button {
 .button-text {
     font-size: 40px;
     margin: auto;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     position: relative;
     z-index: 3;
     color: white;
     text-shadow: 0 0 3px goldenrod, 0 0 7px goldenrod;
+
+    transition: 0.2s ease-in-out;    
+}
+
+.button-class:hover .button-text {
+    transition: 0.2s ease-in-out;
+    
+    font-size: 40px;
+    letter-spacing: 7px;
 }
 
 .button-class {
