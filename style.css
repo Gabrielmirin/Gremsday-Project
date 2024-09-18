@@ -1,7 +1,5 @@
 /* Fonts
 Credits header: https://fonts.googleapis.com/css2?family=Nerko+One&display=swap
-
-
 */
 
 * {
@@ -12,6 +10,7 @@ Credits header: https://fonts.googleapis.com/css2?family=Nerko+One&display=swap
 }
 
 ::-webkit-scrollbar {display: none}
+html {overflow-x: none;}
 
 /* Text reuse */
 h2 {
@@ -26,12 +25,9 @@ li {
     font-size: 18px;
 }
 
-p,
-a,
-li {color: #452819;}
+p, a, li {color: #452819; }
 
-h2,
-h3 {
+h2, h3 {
     color: white;
     font-family: "Nerko One", cursive;
     letter-spacing: 2px;
@@ -40,11 +36,37 @@ h3 {
 .to-left {text-align: start;}
 .to-right {text-align: end;}
 
+#messages {display: none;}
+#meet-the-greems {}
+#fan-art {}
+#certificate {}
+#misc-fan-content {}
+
 /* Banner */
 .ggbanner {
-    height: 213px;
-    width: 100vw;
-    background-color: black;
+    max-height: 213px;
+    width: 100%;
+
+    background-color: white;
+    background-image: url(material/credits-bg-op.png);
+
+    position: relative;
+    overflow: hidden;
+
+    justify-content: center;
+}
+
+.ggbanner img {
+    display: block;
+    position: inherit;
+
+    margin: 20px auto;
+    
+    max-width: 100%;
+    max-height: 200px;
+    height: auto;
+
+    z-index: 2;
 }
 
 /* Content */
@@ -65,7 +87,7 @@ h3 {
     display: flex;
     flex-direction: column;
 
-    width: 550px;
+    width: auto;
     height: inherit;
 
     justify-content: center;
@@ -84,15 +106,120 @@ h3 {
 
 /* Content section */
 .content-section {
-    background-color: aqua;
+    width: 100vw;
+    height: 740px;
 
-    width: 75%;
-    height: inherit;
+    display: flex;
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
 }
+
+.playpen-sans-uniquifier {
+    display: none;
+    font-family: "Playpen Sans", cursive;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    color: black;
+    font-size: 40px;
+}
+
+.outline {
+    -webkit-text-stroke: 30px white;
+    paint-order: stroke fill;   
+}
+
+#instructions {
+    opacity: 1;
+    transition: opacity 2s ease-out;
+}
+
+/* Messages */
+.section {
+    background-color: white;
+    border: 2px solid orange;
+    border-radius: 15px;
+
+    height: 700px;
+    width: 100%;
+
+    margin: 0 10px 0 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+
+    overflow: scroll;
+}
+
+.section h2 {
+    color: black;
+}
+
+.messages {
+    display: flex;
+    flex-wrap: wrap;
+
+    background-color: white;
+    height: auto;
+    max-width: 1300px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+
+    width: 430px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.card-inside {
+    border: 2px solid orange;
+    border-radius: 15px;
+
+    margin: 10px;
+    padding: 10px;
+
+    height: max-content;
+    width: 380px;
+
+    transition: 0.3s ease-in-out;
+}
+
+.card-name {
+    color: black;
+    margin: 3px 0px 3px 0px;
+}
+
+.card-inside:hover {
+    background-color: orange;
+    scale: 1.1;
+}
+
+.card-text {
+    transition: 0.3s ease-in-out;
+}
+
+.card-inside:hover .card-text {
+    color: white;
+}
+
+.card-name, .section h2, .button-text {font-family: "Averia Sans Libre", sans-serif;}
 
 /* Buttons */
 .buttons {
-    width: fit-content;
+    max-width: 520px;
     height: fit-content;
 
     margin: 0px auto;
@@ -110,7 +237,7 @@ button {
     display: flex;
     position: relative;
 
-    width: 500px;
+    
     height: 100px;
 
     background-color: rgb(255, 165, 0);
@@ -141,8 +268,7 @@ button {
     position: relative;
     z-index: 3;
     color: white;
-    text-shadow: 0 0 3px goldenrod, 0 0 7px goldenrod;
-
+    width: 500px;
     transition: 0.2s ease-in-out;    
 }
 
@@ -210,17 +336,13 @@ footer {
     height: fit-content;
     display: flex;
     flex-wrap: wrap;
+    margin: 5px 0px 5px;
 }
 
 .gigi-links p {
     margin-left: 30px;
     margin-right: 30px;
     letter-spacing: 2px;
-}
-
-.gigi2 img {
-    height: 110px;
-    margin: 10px;
 }
 
 .last-credit-block {

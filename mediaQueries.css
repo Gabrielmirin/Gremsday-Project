@@ -39,6 +39,11 @@
     }
 }
 
-@media screen and (max-width: 1051px) {
-    
+@media screen and (max-width: 1150px) {
+    /* Mobile from here */
+}
+
+@media screen and (max-width: 520px) {
+    button {
+    }
 }
