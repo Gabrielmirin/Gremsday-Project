@@ -37,10 +37,10 @@ h2, h3 {
 .to-right {text-align: end;}
 
 #messages {display: none;}
-#meet-the-greems {}
-#fan-art {display: none;}
-#certificate {}
-#misc-fan-content {}
+#meetTheGreems {display: none;}
+#fanart {display: none;}
+#certificate {display: none;}
+#miscFanContent {display: none;}
 
 /* Banner */
 .ggbanner {
@@ -119,7 +119,7 @@ h2, h3 {
 }
 
 .playpen-sans-uniquifier {
-    display: none;
+    display: block;
     font-family: "Playpen Sans", cursive;
     font-optical-sizing: auto;
     font-weight: 900;

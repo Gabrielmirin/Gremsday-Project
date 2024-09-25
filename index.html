@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Nerko+One&family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Nerko+One&family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
 <body>
     <!-- Banner -->
     <div class="ggbanner">        
@@ -23,7 +23,7 @@
         <div class="buttons-section">
             <div class="button-space">
                 <div class="buttons">
-                    <button class="button-class" id="message-button">
+                    <button class="button-class" id="message-button" onclick="forb1()">
                         <span class="button-text">Messages</span>
                         <img src="material/messages-image.webp" class="button-img">                        
                     </button>
@@ -31,7 +31,7 @@
             </div>
             <div class="button-space">
                 <div class="buttons">
-                    <button class="button-class" id="mtg-button">
+                    <button class="button-class" id="mtg-button" onclick="forb2()">
                         <span class="button-text">Meet the greems!</span>
                         <img src="material/mtg-image.webp" class="button-img">                        
                     </button>
@@ -39,7 +39,7 @@
             </div>
             <div class="button-space">
                 <div class="buttons">
-                    <button class="button-class" id="fanart-button">
+                    <button class="button-class" id="fanart-button" onclick="forb3()">
                         <span class="button-text">Fan art</span>
                         <img src="material/fanart-image.webp" class="button-img">                        
                     </button>
@@ -47,7 +47,7 @@
             </div>
             <div class="button-space">
                 <div class="buttons">
-                    <button class="button-class" id="certificate-button">
+                    <button class="button-class" id="certificate-button" onclick="forb4()">
                         <span class="button-text">Certificate</span>
                         <img src="material/certificate-image.webp" class="button-img">                        
                     </button>
@@ -55,7 +55,7 @@
             </div>
             <div class="button-space">
                 <div class="buttons">
-                    <button class="button-class" id="mfc-button">
+                    <button class="button-class" id="mfc-button" onclick="forb5()">
                         <span class="button-text">Misc fan content</span>
                         <img src="material/mfc-image.webp" class="button-img">                        
                     </button>
@@ -574,7 +574,7 @@
                     </div>
                 </div>
             </div>
-            <div class="section" id="meet-the-greems">
+            <div class="section" id="meetTheGreems">
                 <h2>~Meet the greems~</h2>
                 <section class="slider-container">
                     <div class="slider-wrapper">
@@ -649,7 +649,7 @@
                     </div>
                 </section>
             </div>
-            <div class="section" id="fan-art">
+            <div class="section" id="fanart">
                 <h2>~Fan art~</h2>
                 <section class="slider-container">
                     <div class="slider-wrapper">
@@ -668,6 +668,13 @@
                         </div>
                     </div>
                 </section>
+            </div>
+            <div class="section" id="certificate">
+                <h2>~Certificate~</h2>
+                <div class="certificate-text"></div>
+            </div>
+            <div class="section" id="miscFanContent">
+                <h2>~Miscellaneous Content~</h2>
             </div>
         </div>
     </div>
@@ -710,5 +717,73 @@
             </div>
         </div>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            const instructions = document.getElementById('instructions');
+            setTimeout(function() {
+                instructions.style.opacity = '0';
+            }, 5000);
+            setTimeout(function(){
+                instructions.style.display = 'none';
+            }, 6000); 
+        });
+
+        let b1 = document.getElementById('messages');
+        let b2 = document.getElementById('meetTheGreems');
+        let b3 = document.getElementById('fanart');
+        let b4 = document.getElementById('certificate');
+        let b5 = document.getElementById('miscFanContent');
+
+        function forb1(){
+            b2.style.display = 'none';
+            b3.style.display = 'none';
+            b4.style.display = 'none';
+            b5.style.display = 'none';
+
+            if (b1.style.display == 'block') {b1.style.display = 'none'} 
+            else {b1.style.display = 'block'}
+        };
+
+        function forb2(){
+            b1.style.display = 'none';
+            b3.style.display = 'none';
+            b4.style.display = 'none';
+            b5.style.display = 'none';
+
+            if (b2.style.display == 'block') {b2.style.display = 'none'} 
+            else {b2.style.display = 'block'}
+        };
+
+        function forb3(){
+            b1.style.display = 'none';
+            b2.style.display = 'none';
+            b4.style.display = 'none';
+            b5.style.display = 'none';
+
+            if (b3.style.display == 'block') {b3.style.display = 'none'} 
+            else {b3.style.display = 'block'}
+        };
+        
+        function forb4(){
+            b1.style.display = 'none';
+            b2.style.display = 'none';
+            b3.style.display = 'none';
+            b5.style.display = 'none';
+
+            if (b4.style.display == 'block') {b4.style.display = 'none'} 
+            else {b4.style.display = 'block'}
+        };
+        
+        function forb5(){
+            b1.style.display = 'none';
+            b2.style.display = 'none';
+            b3.style.display = 'none';
+            b4.style.display = 'none';
+
+            if (b5.style.display == 'block') {b5.style.display = 'none'} 
+            else {b5.style.display = 'block'}
+        };
+
+    </script>
 </body>
 </html>
