@@ -10,7 +10,7 @@ Credits header: https://fonts.googleapis.com/css2?family=Nerko+One&display=swap
 }
 
 ::-webkit-scrollbar {display: none}
-html {overflow-x: none; scroll-padding-top: 999px;}
+html {overflow-x: none; scroll-padding-top: 100px;}
 
 /* Text reuse */
 h2 {
@@ -33,12 +33,26 @@ h2, h3 {
     letter-spacing: 2px;
 }
 
+/* Preloader */
+#preloader {
+    background: black url(material/banner.webp) no-repeat center center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    text-align: center;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 2s ease-out;
+}
+
 .to-left {text-align: start;}
 .to-right {text-align: end;}
 
 #messages {display: none;}
 #meetTheGreems {display: none;}
 #fanart {display: none;}
+#magmaBoard {display: none;}
 #certificate {display: none;}
 #miscFanContent {display: none;}
 
@@ -74,20 +88,22 @@ h2, h3 {
     display: flex;
 
     width: 100vw;
-    height: 740px;
+    height: auto;
 
     overflow: hidden;
 
     background-image: url(material/shoebox.jpg);
     background-size: cover;
     background-position: center;
+
+    padding: 20px 0px;
 }
 
 .buttons-section {
     display: flex;
     flex-direction: column;
 
-    width: auto;
+    width: 100vw;
     height: inherit;
 
     justify-content: center;
@@ -104,38 +120,10 @@ h2, h3 {
     align-items: center;
 }
 
-/* Content section */
-.content-section {
-    width: 100vw;
-    height: 740px;
-
-    display: flex;
-
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-
-    overflow: hidden;
-}
-
-.playpen-sans-uniquifier {
-    display: block;
-    font-family: "Playpen Sans", cursive;
-    font-optical-sizing: auto;
-    font-weight: 900;
-    font-style: normal;
-    color: black;
-    font-size: 40px;
-}
-
-.outline {
-    -webkit-text-stroke: 30px white;
-    paint-order: stroke fill;   
-}
-
 #instructions {
-    opacity: 1;
-    transition: opacity 2s ease-out;
+    color: gray;
+    opacity: 0.3;
+    font-size: 30px;
 }
 
 /* Messages */
@@ -144,32 +132,25 @@ h2, h3 {
     border: 2px solid orange;
     border-radius: 15px;
 
-    height: 700px;
-    width: 100%;
+    height: auto;
+    overflow: hidden;
 
-    margin: 0 10px 0 10px;
+    width: 90vw;
+
+    padding: 10px 0;
 
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
 
+    justify-content: center;
     align-items: center;
 
     text-align: center;
-
-    overflow: scroll;
-}
-
-.section h2 {
-    color: black;
 }
 
 .messages {
     display: flex;
     flex-wrap: wrap;
-
-    background-color: white;
-    height: auto;
-    max-width: 1300px;
 
     justify-content: center;
     align-items: center;
@@ -195,6 +176,8 @@ h2, h3 {
     width: 380px;
 
     transition: 0.3s ease-in-out;
+
+    text-align: center;
 }
 
 .card-name {
@@ -222,16 +205,13 @@ h2, h3 {
     padding: 10px;
 
     width: inherit;
-    height: 600px;
+    height: 300px;
     overflow: hidden;
 }
 
 .slider-wrapper {
     position: relative;
     
-    max-width: 90rem;
-    max-height: 585px;
-
     overflow: hidden;
 
     margin: 0 auto;
@@ -249,7 +229,7 @@ h2, h3 {
 }
 
 .slider img {
-    max-height: 600px;
+    max-height: 280px;
 
     scroll-snap-align: start;
     object-fit: cover;
@@ -257,9 +237,9 @@ h2, h3 {
 
 .slider-nav {
     display: flex;
-    column-gap: 1rem;
+    column-gap: 0.4rem;
     position: absolute;
-    bottom: 1.25rem;
+    bottom: 0.1rem;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
@@ -278,8 +258,6 @@ h2, h3 {
     opacity: 100%;
     background-color: black;
 }
-
-.external {display: flex;}
 
 /* Buttons */
 .buttons {
@@ -364,7 +342,8 @@ button:hover img {
 
 #message-button img {top: -90px;}  
 #mtg-button img {top: -90px;}
-#fanart-button img {top: -90px;}
+#fanart-button img {top: -80px;}
+#magmab-button img {top: -200px;}
 #certificate-button img {top: -60px;}
 #mfc-button img {top: -110px;}
 
@@ -430,3 +409,70 @@ footer {
 .lcb-child li {margin: 10px;}
 
 .lcb-child h3 {margin: 10px 0px 10px 0px;}
+
+.fanart-galery {
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+.fanart-galery img {
+    border: 2px solid black;
+    border-radius: 2px;
+    max-width: 500px;
+    transition: transform 0.5s ease-out;
+}
+
+.fanart-galery img:hover {
+    transform: scale(1.2);
+}
+
+.certificate-h2 {color: black;}
+
+.kakapos {
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+    justify-content: center;
+
+    height: auto;
+    width: 100%;
+}
+
+.kakapo-div {
+    display: flex;
+    flex-wrap: wrap;
+
+    background-color: rgb(243, 181, 67);
+    border: 5px solid black;
+    border-radius: 10px;
+    
+    justify-content: center;
+
+    text-align: start;
+
+    height: 1400px;
+    width: 740px;
+
+    margin: 5px 3px 20px 3px;
+}
+
+.kakapo-certificate {max-height: 800px;}
+.kakapo-picture {
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.kakapo-div li {
+    margin: 10px 0px 10px 20px;
+}
+
+.magmaBoardCanva {
+    max-width: 100%;
+}

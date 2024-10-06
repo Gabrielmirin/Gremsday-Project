@@ -13,6 +13,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Nerko+One&family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
 <body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <p id="instructions">Click one of the buttons to display the content! If your browser sends you to the credits, scroll up to see the rest of the website</p>
+    </div>
+
     <!-- Banner -->
     <div class="ggbanner">        
         <img src="material/banner.webp">
@@ -29,45 +34,8 @@
                     </button>
                 </div>
             </div>
-            <div class="button-space">
-                <div class="buttons">
-                    <button class="button-class" id="mtg-button" onclick="forb2()">
-                        <span class="button-text">Meet the greems!</span>
-                        <img src="material/mtg-image.webp" class="button-img">                        
-                    </button>
-                </div>
-            </div>
-            <div class="button-space">
-                <div class="buttons">
-                    <button class="button-class" id="fanart-button" onclick="forb3()">
-                        <span class="button-text">Fan art</span>
-                        <img src="material/fanart-image.webp" class="button-img">                        
-                    </button>
-                </div>
-            </div>
-            <div class="button-space">
-                <div class="buttons">
-                    <button class="button-class" id="certificate-button" onclick="forb4()">
-                        <span class="button-text">Certificate</span>
-                        <img src="material/certificate-image.webp" class="button-img">                        
-                    </button>
-                </div>
-            </div>
-            <div class="button-space">
-                <div class="buttons">
-                    <button class="button-class" id="mfc-button" onclick="forb5()">
-                        <span class="button-text">Misc fan content</span>
-                        <img src="material/mfc-image.webp" class="button-img">                        
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <div class="content-section">
-            <p class="playpen-sans-uniquifier outline" id="instructions">Click one of the buttons to display the content!</p>
             <div class="section" id="messages">
-                <h2>~Messages~</h2>
-                <div class="messages">
+                <div class="messages" id="messages2">
                     <!-- Petty -->
                     <div class="card">
                         <div class="card-inside">
@@ -579,55 +547,207 @@
                             <p class="card-text">Happy Birthday Gigi! Thank you so much for joining Hololive! I look forward to growing together over the years to come! Grems together warm!</p>
                         </div>
                     </div>
+                    <!-- Akiko (Jace-Invader) -->
+                    <div class="card">
+                        <div class="card-inside">
+                            <h3 class="card-name">Akiko (Jace-Invader)</h3>
+                            <p class="card-text">Happy Birthday to the cutest Gremlin! Your laugh and chaotic genki energy are infectious. Thanks to you, I will never forget the 21st of September. I can’t wait to see what other crazy fun adventures you get up to! Love you, GG!</p>
+                        </div>
+                    </div>
+                    <!-- Katagon -->
+                    <div class="card">
+                        <div class="card-inside">
+                            <h3 class="card-name">Katagon</h3>
+                            <p class="card-text">HI GIGI!!!! We weren't sure how many candles to add so we just added as many as we could fit on the cake! (luckily grems are fireproof) I just wanted to say how much I love your channel! I love putting on your streams when I get home from work or whenever I'm feeling down because your wonderfully weird sense of humor always puts me in a better mood! Whether you're yapping about Teen Wolf or singing September for 8 hours straight, I love watching your streams! Happy birthday Gigi! Here's to four years of Gigi content!</p>
+                        </div>
+                    </div>
+                    <!-- csuperc -->
+                    <div class="card">
+                        <div class="card-inside">
+                            <h3 class="card-name">csuperc</h3>
+                            <p class="card-text">Happy birthday GG!!  You may have only just recently debuted but you’re already getting old! :D</p>
+                        </div>
+                    </div>
+                    <!-- Donut -->
+                    <div class="card">
+                        <div class="card-inside">
+                            <h3 class="card-name">Donut</h3>
+                            <p class="card-text">Happy birthday Gigi! Your fun and energetic streams at standard Gigi time always give me a boost of energy before I start my work day...even if it is Teen Wolf &lt;man standing emoji&gt;. I hope you have a big and delicious Boba for your special day and here is to celebrating many more birthdays together with us grems!</p>
+                        </div>
+                    </div>
+                    <!-- Neeko -->
+                    <div class="card">
+                        <div class="card-inside">
+                            <h3 class="card-name">Neeko</h3>
+                            <p class="card-text">Thank you for your streamings full of energy and laughs! Wish you a beautiful day and an happy new year!</p>
+                        </div>
+                    </div>
+                    <!-- itz, da standee counter -->
+                    <div class="card">
+                        <div class="card-inside">
+                            <h3 class="card-name">itz, da standee counter</h3>
+                            <p class="card-text">Habby Birthed Day</p>
+                        </div>
+                    </div>
+                    <!-- Grem -->
+                    <div class="card">
+                        <div class="card-inside">
+                            <h3 class="card-name">Grem</h3>
+                            <p class="card-text">Happy birthday gigi !!! you made me wake up at a normal time to watch your stream thanks for fixing my sleep schedule !</p>
+                        </div>
+                    </div>
+                    <!-- Grem -->
+                    <div class="card">
+                        <div class="card-inside">
+                            <h3 class="card-name">Grem</h3>
+                            <p class="card-text">Gi murin and happy birthday! Thank you for the fun times you have brought and I can't wait to see more Gigi in the future! For Justice!</p>
+                        </div>
+                    </div>
+                    <!-- Wao -->
+                    <div class="card">
+                        <div class="card-inside">
+                            <h3 class="card-name">Wao</h3>
+                            <p class="card-text">Life is roblox! Happy birthday Gigi! I love your content and can't wait to see more!</p>
+                        </div>
+                    </div>
+                    <!-- Innwy -->
+                    <div class="card">
+                        <div class="card-inside">
+                            <h3 class="card-name">Innwy</h3>
+                            <p class="card-text">GI MURIN! I know you have a lot of birthday wishes to get through so I'll keep it short and sweet and just say you're incredible! From your energetic gremlin energy to your fire writing skill, you inspire me to be more creative in how to push myself. I hope to be a part of this shoebox collective 4ever! HAPPY GREMSDAY! </p>
+                        </div>
+                    </div>
+                    <!-- BrightRai -->
+                    <div class="card">
+                        <div class="card-inside">
+                            <h3 class="card-name">BrightRai</h3>
+                            <p class="card-text">"Ahhh, da streamerrrrr! I quickly fell for Gigi's antics and almost immediate innovation for not just hololive, but for vtubing in general. I will continue to show my support for Gigi as long as I can, and I hope this is a long road filled with many laughs and shared love with everyone involved. Thank you for coming into our lives, Gigi!"</p>
+                        </div>
+                    </div>
+                    <!-- The Gnome's Silliest Prophet -->
+                    <div class="card">
+                        <div class="card-inside">
+                            <h3 class="card-name">Gnome's Silliest Prophet</h3>
+                            <p class="card-text">Happy Birthday GG!!! You've been delightfully fun and entertaining to watch ever since I was forcefully shoved into the shoebox during ENReco! I believe you may have genuinely changed my brain chemistry and psyche, but I'm okay with that! I hope you have an extremely fun birthday and get to eat as many treats as you'd like, you earned it for sure. I'm looking so forward to what you do here in Hololive and I can't wait for the many celebration and milestones you'll get!</p>
+                        </div>
+                    </div>
+                    <!-- da grimp -->
+                    <div class="card">
+                        <div class="card-inside">
+                            <h3 class="card-name">da grimp</h3>
+                            <p class="card-text">Hello Ms. Murin I have here the concept art for the future ""Gigi Murin Marketable Plushie"". Please send feedback within the next 4-5 business days.</p>
+                        </div>
+                    </div>
+                    <!-- a danny grem -->
+                    <div class="card">
+                        <div class="card-inside">
+                            <h3 class="card-name">a danny grem</h3>
+                            <p class="card-text">The September 21st, 2024 karaoke will remind me to appreciate every day as if it was a special day. Your creativity is inspiring and your laugh gives us grems genuine happiness. Here's to many more Gigi birthdays and karaokes!</p>
+                        </div>
+                    </div>
+                    <!-- Dustbucket -->
+                    <div class="card">
+                        <div class="card-inside">
+                            <h3 class="card-name">Dustbucket</h3>
+                            <p class="card-text">Happy Birthday, Gigi! Thank you so much for your amazing streams! They've been a wonderful source of much-needed laughter for me. Between your numerous gags, commitment to hysterical bits, based takes, infectious singing, and hilarious banter, your streams never fail to bring a smile and a laugh to my desktop. The Visage stream has also become one of my favorite streams of all time. Also, it’s good to hear there’s someone else with a hyper-fixation on Hadestown! I saw it while I was in New York for Breaking Dimensions, and it was breathtaking. I had already been listening to the soundtrack on repeat before that, but after seeing it on stage with all the effects and actors, I gained a new level of obsession with the musical. Oh, and as a freelance writer, the phrase “stand behind me, kitten! Watch how daddy spells this word” now lives rent-free in my mind whenever I’m working with a client. Thank you for that. On the note of writing, I also hope you keep up with your writing! It was inspiring watching you improvise ‘A Knight’s Tale’ on stream, and I’d love to read your stories in the future (or an audio drama—your voice packs are so much fun!). Have a great birthday today! I look forward to all of your future streams!</p>
+                        </div>
+                    </div>
+                    <!-- Hachie -->
+                    <div class="card">
+                        <div class="card-inside">
+                            <h3 class="card-name">Hachie</h3>
+                            <p class="card-text">Hey Gigi, happy birthday! Huzzah! Your first birthday in Holo! It's crazy to think that you've only been here for a couple of months. And even though it's only been a couple of months, you've given us so much stuff, and every stream is really fun! May it be yapping, games, shitposting, or even psychologically traumatizing fandoms, it's really fun. Gremlin as you are, I really like your positive outlook on life; it's so nice to see and inspiring! You're such a talented person and genuinely fun person to listen to. And I'm glad to have met you! So I hope that you'll have a great day today, and I hope that more and more people will get to know you and your craft. You're really fun, Gigi! Let's cheer for more birthdays for many years to come! And once again, happy birthday!</p>
+                        </div>
+                    </div>
+                    <!-- Phantom -->
+                    <div class="card">
+                        <div class="card-inside">
+                            <h3 class="card-name">Phantom</h3>
+                            <p class="card-text">Thank you for the serotonin your shitposty tweets and drawings bring me!!1</p>
+                        </div>
+                    </div>
+                    <!-- YoBoiYobert -->
+                    <div class="card">
+                        <div class="card-inside">
+                            <h3 class="card-name">YoBoiYobert</h3>
+                            <p class="card-text">GI MURINN!! I would just like to wish you a happy birthday and a wonderful career together with the rest of the talents. I admire your creativity and your sunshine-like personality, and I hope for that shine to never fade away. May you continue to find happiness in your endeavors and to have fun with your newfound friends in Hololive!!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="button-space">
+                <div class="buttons">
+                    <button class="button-class" id="mtg-button" onclick="forb2()">
+                        <span class="button-text">Meet the greems!</span>
+                        <img src="material/mtg-image.webp" class="button-img">                        
+                    </button>
                 </div>
             </div>
             <div class="section" id="meetTheGreems">
-                <h2>~Meet the greems~</h2>
                 <section class="slider-container">
                     <div class="slider-wrapper">
                         <div class="slider">
-                            <a class="external" target="_blank" href="meet the grems/Alfredo-Cáceres.webp" id="s1-1">
+                            <a target="_blank" href="meet the grems/Alfredo-Cáceres.webp" id="s1-1">
                                 <img src="meet the grems/Alfredo-Cáceres.webp"></a>
-                            <a class="external" target="_blank" href="meet the grems/Delushiitake☆.webp" id="s1-2">
+                            <a target="_blank" href="meet the grems/Delushiitake☆.webp" id="s1-2">
                                 <img src="meet the grems/Delushiitake☆.webp"></a>
-                            <a class="external" target="_blank" href="meet the grems/Dogboycyan.webp" id="s1-3">
+                            <a target="_blank" href="meet the grems/Dogboycyan.webp" id="s1-3">
                                 <img src="meet the grems/Dogboycyan.webp"></a>
-                            <a class="external" target="_blank" href="meet the grems/FFgrem.webp" id="s1-4">
+                            <a target="_blank" href="meet the grems/FFgrem.webp" id="s1-4">
                                 <img src="meet the grems/FFgrem.webp"></a>
-                            <a class="external" target="_blank" href="meet the grems/Frogg.webp" id="s1-5">
+                            <a target="_blank" href="meet the grems/Frogg.webp" id="s1-5">
                                 <img src="meet the grems/Frogg.webp"></a>
-                            <a class="external" target="_blank" href="meet the grems/Jammington24.webp" id="s1-7">
+                            <a target="_blank" href="meet the grems/Jammington24.webp" id="s1-7">
                                 <img src="meet the grems/Jammington24.webp"></a>
-                            <a class="external" target="_blank" href="meet the grems/kyon.webp" id="s1-8">
+                            <a target="_blank" href="meet the grems/kyon.webp" id="s1-8">
                                 <img src="meet the grems/kyon.webp"></a>
-                            <a class="external" target="_blank" href="meet the grems/Liopo.webp" id="s1-9">
+                            <a target="_blank" href="meet the grems/Liopo.webp" id="s1-9">
                                 <img src="meet the grems/Liopo.webp"></a>
-                            <a class="external" target="_blank" href="meet the grems/LtLolipop.webp" id="s1-10">
+                            <a target="_blank" href="meet the grems/LtLolipop.webp" id="s1-10">
                                 <img src="meet the grems/LtLolipop.webp"></a>
-                            <a class="external" target="_blank" href="meet the grems/NKS5.webp" id="s1-11">
+                            <a target="_blank" href="meet the grems/NKS5.webp" id="s1-11">
                                 <img src="meet the grems/NKS5.webp"></a>
-                            <a class="external" target="_blank" href="meet the grems/Oouf.webp" id="s1-12">
+                            <a target="_blank" href="meet the grems/Oouf.webp" id="s1-12">
                                 <img src="meet the grems/Oouf.webp"></a>
-                            <a class="external" target="_blank" href="meet the grems/PickledGremOnParty.webp" id="s1-13">
+                            <a target="_blank" href="meet the grems/PickledGremOnParty.webp" id="s1-13">
                                 <img src="meet the grems/PickledGremOnParty.webp"></a>
-                            <a class="external" target="_blank" href="meet the grems/Plagesama.webp" id="s1-14">
+                            <a target="_blank" href="meet the grems/Plagesama.webp" id="s1-14">
                                 <img src="meet the grems/Plagesama.webp"></a>
-                            <a class="external" target="_blank" href="meet the grems/PraiseLeTsun.webp" id="s1-15">
+                            <a target="_blank" href="meet the grems/PraiseLeTsun.webp" id="s1-15">
                                 <img src="meet the grems/PraiseLeTsun.webp"></a>
-                            <a class="external" target="_blank" href="meet the grems/Rally Gremurin on Gravel and Asphalt.webp" id="s1-16">
+                            <a target="_blank" href="meet the grems/Rally Gremurin on Gravel and Asphalt.webp" id="s1-16">
                                 <img src="meet the grems/Rally Gremurin on Gravel and Asphalt.webp"></a>
-                            <a class="external" target="_blank" href="meet the grems/Reddyt_Shokker.webp" id="s1-17">
+                            <a target="_blank" href="meet the grems/Reddyt_Shokker.webp" id="s1-17">
                                 <img src="meet the grems/Reddyt_Shokker.webp"></a>
-                            <a class="external" target="_blank" href="meet the grems/Syaxamaphone.webp" id="s1-18">
+                            <a target="_blank" href="meet the grems/Syaxamaphone.webp" id="s1-18">
                                 <img src="meet the grems/Syaxamaphone.webp"></a>
-                            <a class="external" target="_blank" href="meet the grems/TsukumoNoMi.webp" id="s1-19">
+                            <a target="_blank" href="meet the grems/TsukumoNoMi.webp" id="s1-19">
                                 <img src="meet the grems/TsukumoNoMi.webp"></a>
-                            <a class="external" target="_blank" href="meet the grems/UffUff.webp" id="s1-20">
+                            <a target="_blank" href="meet the grems/UffUff.webp" id="s1-20">
                                 <img src="meet the grems/UffUff.webp"></a>
-                            <a class="external" target="_blank" href="meet the grems/Vyxen725.webp" id="s1-21">
+                            <a target="_blank" href="meet the grems/Vyxen725.webp" id="s1-21">
                                 <img src="meet the grems/Vyxen725.webp"></a>
-                            <a class="external" target="_blank" href="meet the grems/Wackinii.webp" id="s1-22">
+                            <a target="_blank" href="meet the grems/Wackinii.webp" id="s1-22">
                                 <img src="meet the grems/Wackinii.webp"></a>
+                            <a target="_blank" href="meet the grems/Grem-Robert-Wood.webp" id="s1-23">
+                                <img src="meet the grems/Grem-Robert-Wood.webp"></a>
+                            <a target="_blank" href="meet the grems/Grem singular - Captain Katagon.webp" id="s1-24">
+                                <img src="meet the grems/Grem singular - Captain Katagon.webp"></a>
+                            <a target="_blank" href="meet the grems/Untitled - Bright Rai.webp" id="s1-25">
+                                <img src="meet the grems/Untitled - Bright Rai.webp"></a>
+                            <a target="_blank" href="meet the grems/gremsona - Rödhake Douglas.webp" id="s1-26">
+                                <img src="meet the grems/gremsona - Rödhake Douglas.webp"></a>
+                            <a target="_blank" href="meet the grems/gremmanItz - ItzMe.webp" id="s1-27">
+                                <img src="meet the grems/gremmanItz - ItzMe.webp"></a>
+                            <a target="_blank" href="meet the grems/gremsona-Eevee.webp" id="s1-28">
+                                <img src="meet the grems/gremsona-Eevee.webp"></a>
+                            <a target="_blank" href="meet the grems/hachie_gremsona-Hachie-Project.webp" id="s1-29">
+                                <img src="meet the grems/hachie_gremsona-Hachie-Project.webp"></a>
+                            <a target="_blank" href="meet the grems/gg-bdfay-grme_-The-Gnome_s-Prophet.webp" id="s1-30">
+                                <img src="meet the grems/gg-bdfay-grme_-The-Gnome_s-Prophet.webp"></a>
+                            <a target="_blank" href="meet the grems/da-grimp-Shady-Hats.webp" id="s1-31">
+                                <img src="meet the grems/da-grimp-Shady-Hats.webp"></a>    
+                            
                         </div>
                         <div class="slider-nav">
                             <a href="#s1-1"></a>
@@ -652,71 +772,135 @@
                             <a href="#s1-20"></a>
                             <a href="#s1-21"></a>
                             <a href="#s1-22"></a>
+                            <a href="#s1-23"></a>
+                            <a href="#s1-24"></a>
+                            <a href="#s1-25"></a>
+                            <a href="#s1-26"></a>
+                            <a href="#s1-27"></a>
+                            <a href="#s1-28"></a>
+                            <a href="#s1-29"></a>
+                            <a href="#s1-30"></a>
+                            <a href="#s1-31"></a>
                         </div>
                     </div>
                 </section>
+            </div>
+            
+            <div class="button-space">
+                <div class="buttons">
+                    <button class="button-class" id="fanart-button" onclick="forb3()">
+                        <span class="button-text">Fan art</span>
+                        <img src="material/fanart-image.webp" class="button-img">                        
+                    </button>
+                </div>
             </div>
             <div class="section" id="fanart">
-                <h2>~Fan art~</h2>
-                <section class="slider-container">
-                    <div class="slider-wrapper">
-                        <div class="slider">
-                            <a class="external" id="s2-1">
-                                <img src="fan art/39BC8258-B0EC-4D07-BAD9-45784971A335 - AlmondTofuChan.webp"></a>
-                            <a class="external" id="s2-2">
-                                <img src="fan art/ccgg1 - Dormant Cucumber.webp"></a>
-                            <a class="external" id="s2-3">
-                                <img src="fan art/Gigi Smug - Alfredo Cáceres[アルフレッド・カセレス].webp"></a>
-                            <a class="external" id="s2-4">
-                                <img src="fan art/Gigi_GGEZ - Leon Habs.webp"></a>
-                            <a class="external" id="s2-5">
-                                <img src="fan art/GIGI_Motorsport-1 - NKS5.webp"></a>
-                            <a class="external" id="s2-6">
-                                <img src="fan art/gigimurinthumbnail - Dai anim.webp"></a>
-                            <a class="external" id="s2-7">
-                                <img src="fan art/gigiRoadRage - Syaxamaphone.webp"></a>
-                            <a class="external" id="s2-8">
-                                <img src="fan art/Grem.webp"></a>
-                            <a class="external" id="s2-9">
-                                <img src="fan art/GREMSDAY!! - _Cosmik_ W.webp"></a>
-                            <a class="external" id="s2-10">
-                                <img src="fan art/image - Touhou Trash.webp"></a>
-                            <a class="external" id="s2-11">
-                                <img src="fan art/IMG_1169 - Doretta Chan.webp"></a>
-                            <a class="external" id="s2-12">
-                                <img src="fan art/Untitled12_20240825015046 - Zaki Guadana.webp"></a>
-                            <a class="external" id="s2-13">
-                                <img src="fan art/Untitled360_20240904011211 - iris.webp"></a>
-                            <a class="external" id="s2-14">
-                                <img src="fan art/YPM_Gigi - Mikko Telkamo.webp"></a>    
-                        </div>
-                        <div class="slider-nav">
-                            <a href="#s2-1"></a>
-                            <a href="#s2-2"></a>
-                            <a href="#s2-3"></a>
-                            <a href="#s2-4"></a>
-                            <a href="#s2-5"></a>
-                            <a href="#s2-6"></a>
-                            <a href="#s2-7"></a>
-                            <a href="#s2-8"></a>
-                            <a href="#s2-9"></a>
-                            <a href="#s2-10"></a>
-                            <a href="#s2-11"></a>
-                            <a href="#s2-12"></a>
-                            <a href="#s2-13"></a>
-                            <a href="#s2-14"></a>
-                        </div>
-                    </div>
-                </section>
+                <div class="fanart-galery">
+                    <a href="fan art/Gigi laughed textured - YoBoiYobert.webp"><img src="fan art/Gigi laughed textured - YoBoiYobert.webp"></a>
+                    <a href="fan art/39BC8258-B0EC-4D07-BAD9-45784971A335 - AlmondTofuChan.webp"><img src="fan art/39BC8258-B0EC-4D07-BAD9-45784971A335 - AlmondTofuChan.webp"></a>
+                    <a href="fan art/ccgg1 - Dormant Cucumber.webp"><img src="fan art/ccgg1 - Dormant Cucumber.webp"></a>
+                    <a href="fan art/Gigi Smug - Alfredo Cáceres[アルフレッド・カセレス].webp"><img src="fan art/Gigi Smug - Alfredo Cáceres[アルフレッド・カセレス].webp"></a>
+                    <a href="fan art/Gigi_GGEZ - Leon Habs.webp"><img src="fan art/Gigi_GGEZ - Leon Habs.webp"></a>
+                    <a href="fan art/GIGI_Motorsport-1 - NKS5.webp"><img src="fan art/GIGI_Motorsport-1 - NKS5.webp"></a>
+                    <a href="fan art/gigimurinthumbnail - Dai anim.webp"><img src="fan art/gigimurinthumbnail - Dai anim.webp"></a>
+                    <a href="fan art/gigiRoadRage - Syaxamaphone.webp"><img src="fan art/gigiRoadRage - Syaxamaphone.webp"></a>
+                    <a href="fan art/Grem.webp"><img src="fan art/Grem.webp"></a>
+                    <a href="fan art/GREMSDAY!! - _Cosmik_ W.webp"><img src="fan art/GREMSDAY!! - _Cosmik_ W.webp"></a>
+                    <a href="fan art/image - Touhou Trash.webp"><img src="fan art/image - Touhou Trash.webp"></a>
+                    <a href="fan art/IMG_1169 - Doretta Chan.webp"><img src="fan art/IMG_1169 - Doretta Chan.webp"></a>
+                    <a href="fan art/Untitled12_20240825015046 - Zaki Guadana.webp"><img src="fan art/Untitled12_20240825015046 - Zaki Guadana.webp"></a>
+                    <a href="fan art/Untitled360_20240904011211 - iris.webp"><img src="fan art/Untitled360_20240904011211 - iris.webp"></a>
+                    <a href="fan art/YPM_Gigi - Mikko Telkamo.webp"><img src="fan art/YPM_Gigi - Mikko Telkamo.webp"></a>
+                    <a href="fan art/da Gremcher (grem creechur) - Shady Hats.webp"><img src="fan art/da Gremcher (grem creechur) - Shady Hats.webp"></a>
+                    <a href="fan art/GG Birthday - Captain Katagon.webp"><img src="fan art/GG Birthday - Captain Katagon.webp"></a>    
+                </div>
+            </div>
+            <div class="button-space">
+                <div class="buttons">
+                    <button class="button-class" id="magmab-button" onclick="forb6()">
+                        <span class="button-text">Magma board</span>
+                        <img src="material/fanart-image.webp" class="button-img">                        
+                    </button>
+                </div>
+            </div>
+            <div class="section" id="magmaBoard">
+                <a target="_blank" href="magma board/magma-board-thing.webp"><img class="magmaBoardCanva" src="magma board/magma-board-thing.webp"></a>
+            </div>
+            <div class="button-space">
+                <div class="buttons">
+                    <button class="button-class" id="certificate-button" onclick="forb4()">
+                        <span class="button-text">Certificate</span>
+                        <img src="material/certificate-image.webp" class="button-img">                        
+                    </button>
+                </div>
             </div>
             <div class="section" id="certificate">
-                <h2>~Certificate~</h2>
-                <div class="certificate-text"></div>
+                <h2 class="certificate-h2">We grems <i>adopted</i> two Kãkãpõs!!!</h2>
+                <div class="kakapos">
+                    <div class="kakapo-div">
+                        <img class="kakapo-picture" src="certificate/kuia.webp">
+                        <ul>
+                            <li>- Name: Kuia <i>a.k.a The Genetic Genious</i></li>
+                            <li>- Hatched on March 6th 1998 on Maud Island</li>
+                            <li>- Her name means "Wise, old woman"</li>
+                            <li>She carries a very special gene, because she's the only daughter of the last Fiordland kākāpō, Richard Henry. She currently has succesfully laid and hatched 7 eggs, passing this gene along. In 2022 she was infertile, but she took this as an opportunity to play foster mom and raised 2 more chicks. According to the staff, while she was foster mom she ate the most food of all the moms raising babies, having the volunteers work extra hard.</li>
+                        </ul>
+                        <a target="_blank" href="certificate/kuia-certificate.webp"><img class="kakapo-certificate" src="certificate/kuia-certificate.webp"></a>
+                    </div>
+                    <div class="kakapo-div">
+                        <img class="kakapo-picture" src="certificate/rahotu.webp">
+                        <ul>
+                            <li>- Name: Rahotu <i>a.k.a The Future Promise</i></li>
+                            <li>- Hatched on March 22nd 2019</li>
+                            <li>- He's named after the Maori name for Mitre Peak, a place in Milford Sound.</li>
+                            <li>Rahotu is the grandson of aformentioned Richard Henry, but he was not mothered by Kuia, since his father carried some of this gene, and it's used to artifically inseminate his mom. Making sure it was being spread again! Rahtou had a fungal respitory infection, called Aspergillosis, in the 2019 breeding season. He got treated for this by a team at the Dunedin Wildlife Hospital, where treatment was effective. Although after getting better he also started to get a reputation as escape artist. He's grown up to be a clever bird with a very nice bright green plummage. While he was learning from the older birds during the 2022 breeding season, he again was up to no good, frequently spotted making his way around raiding the food supplies for the nesting moms.</li>
+                        </ul>
+                        <a target="_blank" href="certificate/rahotu-certificate.webp"><img class="kakapo-certificate" src="certificate/rahotu-certificate.webp"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="button-space">
+                <div class="buttons">
+                    <button class="button-class" id="mfc-button" onclick="forb5()">
+                        <span class="button-text">Misc fan content</span>
+                        <img src="material/mfc-image.webp" class="button-img">                        
+                    </button>
+                </div>
             </div>
             <div class="section" id="miscFanContent">
-                <h2>~Miscellaneous Content~</h2>
+                <div class="mfc-block">
+                    <div class="mfc-block-name">
+                        <span>miggo <i>@miggo8123</i></span>
+                    </div>
+                    <div class="mfc-block-message">
+                        <p>As a Miku and Gigi stan, I'm always finding ways to mix #1 Grem in the World feat. #1 Princess in the World!</p>
+                    </div>
+                    <div class="mfc-block-content">
+                        <video src="misc content/Miku Gigi 3x4 - Miggo Salvana.mp4"></video>
+                    </div>
+                </div>
+                <div class="mfc-block">
+                    <div class="mfc-block-name">
+                        <span><i>@vanfrancisco24</i></span>
+                    </div>
+                    <div class="mfc-block-message">
+                        <p>Sup Gigi! Wishing you a happy birthday! As a commemoration of this day, I attached a simple postcard of my rally car (with a livery inspired to you) that I have been using in my local sim-rally competitions. P.S: It was supposed to be a donut drift video but I would get penalized by doing donuts on stage. lol</p>
+                    </div>
+                    <div class="mfc-block-content">
+                        <video src="misc content/Untitled - Van Francisco.webp"></video>
+                    </div>
+                </div>
+                <div class="mfc-block">
+                    <div class="mfc-block-name">
+                        <span>ToaCody <i>@ToaCodyNuva</i></span>
+                    </div>
+                    <div class="mfc-block-content">
+                        <video src="misc content/JusticeMeme5 - JediCody2.mp4"></video>
+                    </div>
+                </div>
             </div>
-        </div>
+        </div>        
     </div>
 
 
@@ -733,7 +917,7 @@
             </div>
             <h2>Credits</h2>
             <ul>
-                <li>Fan project by the "Gigi's Dungeon"</li>
+                <li>Fan project by the Gigi's Dungeon and Gigi's Gremurin Guild 🤝</li>
                 <li>Website by <a target="_blank" href="https://x.com/Krosarian_"> @klliope</a></li>
             </ul>
         </div>
@@ -746,7 +930,7 @@
                     <li>- <a target="_blank" href="https://x.com/Keiseeaaa"> @Keiseeaaa</a> for the <a href="https://x.com/Keiseeaaa/status/1835061449854796212"> grem</a> in the banner.</li>
                     <li>- <a target="_blank" href="https://x.com/BorealYoako"> @BorealYoako</a> for letting us use his <a target="_blank" href="https://x.com/BorealYoako/status/1828809770725249240">meme</a> for the messages button.</li>
                     <li>- <a target="_blank" href="https://x.com/dvrkodachi"> @dvrkodachi</a> for letting us use his <a target="_blank" href="https://x.com/dvrkodachi/status/1829571520005607622">funny art</a> for the "Meet The Grems" button.</li>
-                    <li>- <a target="_blank" href="https://x.com/oriinte"> @oriinte</a> for letting us use his <a target="_blank" href="https://x.com/oriinte/status/1817981276701475018">amazing art</a> for the fan art button.</li>
+                    <li>- <a target="_blank" href="https://x.com/oriinte"> @oriinte</a> for letting us use his <a target="_blank" href="https://x.com/oriinte/status/1817981276701475018">amazing art</a> for the fan art/magma board buttons.</li>
                     <li>- <a target="_blank" href="https://x.com/gurumie1229"> @gurumie1229</a> for letting us use his <a target="_blank" href="https://x.com/gurumie1229/status/1824132216169041951">adorable meme</a> for the certificate button.</li>
                     <li>- <a target="_blank" href="https://x.com/draw_md71851"> @draw_md71851</a> for letting us use his <a target="_blank" href="https://x.com/draw_md71851/status/1827219592239821021">cool drawing</a> for the "M. F. C." button.</li>
                 </ul>
@@ -758,71 +942,50 @@
         </div>
     </footer>
     <script>
-        document.addEventListener("DOMContentLoaded", function(){
-            const instructions = document.getElementById('instructions');
-            setTimeout(function() {
-                instructions.style.opacity = '0';
-            }, 5000);
-            setTimeout(function(){
-                instructions.style.display = 'none';
-            }, 6000); 
-        });
-
         let b1 = document.getElementById('messages');
         let b2 = document.getElementById('meetTheGreems');
         let b3 = document.getElementById('fanart');
         let b4 = document.getElementById('certificate');
         let b5 = document.getElementById('miscFanContent');
+        let b6 = document.getElementById('magmaBoard');
 
         function forb1(){
-            b2.style.display = 'none';
-            b3.style.display = 'none';
-            b4.style.display = 'none';
-            b5.style.display = 'none';
-
-            if (b1.style.display == 'block') {b1.style.display = 'none'} 
+            if (b1.style.display == 'block') {b1.style.display = 'none';} 
             else {b1.style.display = 'block'}
         };
 
         function forb2(){
-            b1.style.display = 'none';
-            b3.style.display = 'none';
-            b4.style.display = 'none';
-            b5.style.display = 'none';
-
             if (b2.style.display == 'block') {b2.style.display = 'none'} 
             else {b2.style.display = 'block'}
         };
 
         function forb3(){
-            b1.style.display = 'none';
-            b2.style.display = 'none';
-            b4.style.display = 'none';
-            b5.style.display = 'none';
-
             if (b3.style.display == 'block') {b3.style.display = 'none'} 
             else {b3.style.display = 'block'}
         };
         
         function forb4(){
-            b1.style.display = 'none';
-            b2.style.display = 'none';
-            b3.style.display = 'none';
-            b5.style.display = 'none';
-
             if (b4.style.display == 'block') {b4.style.display = 'none'} 
             else {b4.style.display = 'block'}
         };
         
         function forb5(){
-            b1.style.display = 'none';
-            b2.style.display = 'none';
-            b3.style.display = 'none';
-            b4.style.display = 'none';
-
             if (b5.style.display == 'block') {b5.style.display = 'none'} 
             else {b5.style.display = 'block'}
         };
+
+        function forb6(){
+            if (b6.style.display == 'block') {b6.style.display = 'none'} 
+            else {b6.style.display = 'block'}
+        };
+
+        var loader = document.getElementById('preloader');
+        setTimeout(function () {
+            loader.style.opacity = "0"; // Cambiar la opacidad a 0
+            setTimeout(function () {
+                loader.style.display = "none"; // Después de la transición, ocultar el preloader
+            }, 2000); // Debe coincidir con el tiempo de la transición
+        }, 4000);
 
     </script>
 </body>
