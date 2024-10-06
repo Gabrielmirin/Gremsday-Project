@@ -33,6 +33,10 @@ h2, h3 {
     letter-spacing: 2px;
 }
 
+li, p {
+    font-family: "M PLUS 2", sans-serif;
+}
+
 /* Preloader */
 #preloader {
     background: black url(material/banner.webp) no-repeat center center;
@@ -423,7 +427,7 @@ footer {
 .fanart-galery img {
     border: 2px solid black;
     border-radius: 2px;
-    max-width: 500px;
+    width: clamp(350px, 26vw, 30vw);
     transition: transform 0.5s ease-out;
 }
 
@@ -437,7 +441,6 @@ footer {
     display: flex;
     flex-wrap: wrap;
 
-    align-items: center;
     justify-content: center;
 
     height: auto;
@@ -456,14 +459,18 @@ footer {
 
     text-align: start;
 
-    height: 1400px;
-    width: 740px;
+    height: auto;
+    width: clamp(340px, 40vw, 1000px);
 
     margin: 5px 3px 20px 3px;
 }
 
-.kakapo-certificate {max-height: 800px;}
+.kakapo-certificate {
+    height: clamp(400px, 40vw, 1000px);
+}
 .kakapo-picture {
+    width: clamp(300px, 20vw, 60vw);
+
     border-radius: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -475,4 +482,21 @@ footer {
 
 .magmaBoardCanva {
     max-width: 100%;
+}
+
+video {
+    width: clamp(4vw, 600px, 70vw);
+}
+
+.mfc-block-message {
+    margin: 10px 10px 10px 10px;
+}
+
+hr {
+    margin: 20px 0px;
+    opacity: 0.5;
+}
+
+.mfc-block-content img {
+    width: clamp(4vw, 800px, 70vw);
 }
