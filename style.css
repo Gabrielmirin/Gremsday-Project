@@ -97,7 +97,8 @@ li, p {
     overflow: hidden;
 
     background-image: url(material/shoebox.jpg);
-    background-size: cover;
+    background-size: auto; /* Adjust the size to default for repeating */
+    background-repeat: repeat; /* Makes the image repeat */
     background-position: center;
 
     padding: 20px 0px;
